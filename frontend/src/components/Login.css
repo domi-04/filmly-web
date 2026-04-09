@@ -1,0 +1,27 @@
+/* Ensure the entire page background is black */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+}
+
+/* Add animations for input fields */
+.input-animate {
+  transition: all 0.3s ease;
+}
+.input-animate:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+/* Add animations for the button */
+.btn-animate {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.btn-animate:hover {
+  transform: scale(1.05);
+  background-color: #A52A2A;
+}
+.btn-animate:active {
+  transform: scale(0.95);
+}
