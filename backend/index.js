@@ -7,6 +7,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const authRoute = require('./routes/auth');
+
+app.use('/api/auth', authRoute);
+
 app.get('/', (req, res) => {
     res.json({ message: "Hello, world!" });
 });
